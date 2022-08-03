@@ -1,4 +1,44 @@
 body{
-  margin: 0;
-  /* background-color: #A5BECC */
+  margin:0;
+  background-color :#B1E1FF;
+}
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #F5C7A9;
+  padding-top:2px;
+  padding-bottom: 2px;
+}
+.flex-item-left {
+  padding: 3px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 3px;
+  flex: 50%;
+}
+
+#lives,#score {
+  background-color: #FFC18E;
+  color: #61481C;
+  padding: 7px 32px;
+  border: solid 2px;
+  border-radius:20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  font-weight:bolder;
+  margin:1px;
+}
+@media (max-width: 750px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
